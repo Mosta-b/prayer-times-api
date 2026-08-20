@@ -3,12 +3,13 @@ import { GetPrayerTimesUseCase } from "./application/GetPrayerTimesUseCase";
 import { AladhanPrayerTimesRepository } from "./infrastructure/AladhanPrayerTimesRepository";
 import { PrayerTimesController } from "./presentation/controllers/PrayerTimesController";
 import { createPrayerTimesRoutes } from "./presentation/routes/prayerTimesRoutes";
-
+import cors from "cors";
 const repository = new AladhanPrayerTimesRepository();
 const useCase = new GetPrayerTimesUseCase(repository);
 const controller = new PrayerTimesController(useCase);
 
 const app = express();
+app.use(cors());
 app.use(createPrayerTimesRoutes(controller));
 const PORT = process.env.PORT || 3000
 app.get("/", (req, res) => {
