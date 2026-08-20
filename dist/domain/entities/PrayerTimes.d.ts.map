@@ -1,0 +1,1 @@
+{"version":3,"file":"PrayerTimes.d.ts","sourceRoot":"","sources":["../../../src/domain/entities/PrayerTimes.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,WAAW;IACxB,IAAI,EAAE,MAAM,CAAC;IACb,IAAI,EAAE,MAAM,CAAC;IACb,KAAK,EAAE,MAAM,CAAC;IACd,GAAG,EAAE,MAAM,CAAC;IACZ,OAAO,EAAE,MAAM,CAAC;IAChB,IAAI,EAAE,MAAM,CAAC;CAChB"}

@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment variables (secrets)
+.env
+
+# Compiled output
+dist/
+build/
+*.exe
+*.class
+.vscode/
