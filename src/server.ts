@@ -10,8 +10,7 @@ const controller = new PrayerTimesController(useCase);
 
 const app = express();
 app.use(createPrayerTimesRoutes(controller));
-
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 app.get("/", (req, res) => {
     res.status(200).json({ status: "ok", service: "prayer-times-api" });
 });
